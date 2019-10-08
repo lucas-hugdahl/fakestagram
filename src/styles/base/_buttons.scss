@@ -1,0 +1,13 @@
+.button {
+  appearance: none;
+  background: none;
+  border: 1px solid black;
+
+  &--no-border {
+    border-width: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

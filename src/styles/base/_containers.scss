@@ -1,0 +1,11 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  &--main {
+    padding-top: 60px;
+    max-width: 935px;
+  }
+  &--nav {
+    max-width: 1010px;
+  }
+}

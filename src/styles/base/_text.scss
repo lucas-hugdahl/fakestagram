@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500i,700,900&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  color: #262626;
+  line-height: 18px;
+}
+
+span {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+a {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.t-micro {
+  font-size: 10px;
+}
+
+.t-light {
+  font-weight: 300;
+}
+
+.t-regular {
+  font-weight: 400;
+}
+
+.t-medium {
+  font-weight: 500;
+}
+
+.t-bold {
+  font-weight: 700;
+}
+
+.t-heavy {
+  font-weight: 900;
+}
+
+.t-gray {
+  color: $text-light !important;
+}
+
+.t-blue {
+  color: $follow-blue !important;
+}
+

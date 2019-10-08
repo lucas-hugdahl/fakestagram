@@ -1,0 +1,68 @@
+@import '../../base/variables/';
+
+.post {
+  margin-bottom: 60px;
+
+  &-top {
+    max-height: 60px;
+    box-sizing: border-box;
+  }
+
+  &-interactions {
+    .button {
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      &:first-child {
+        margin-left: -10px;
+      }
+    }
+  }
+
+  &-likes {
+    margin-bottom: 8px;
+    &__avatar {
+      margin-right: 4px;
+    }
+
+    &__user {
+      margin: 0 3px;
+    }
+
+    &__likes {
+      margin: 0 3px;
+    }
+  }
+
+  &-caption {
+    &__text {
+      margin-left: 4px;
+    }
+  }
+
+  &-comments {
+    &__view-all {
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    &__user { 
+      margin-right: 4px;
+    }
+
+    &__time {
+      margin-bottom: 4px;
+    }
+  }
+
+  &-add-comment {
+    min-height: 56px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: $medium-gray;
+
+    .button {
+      opacity: .3;
+    }
+  }
+}

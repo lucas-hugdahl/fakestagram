@@ -1,0 +1,16 @@
+@import "../../base/variables/";
+.nav {
+  background: white;
+  width: 100vw;
+  height: 53px;
+  border-style: solid;
+  border-color: $medium-gray;
+  border-width: 0 0 1px 0;
+  position: sticky;
+  top: 0;
+
+  &__logo {
+    height: 29px;
+    margin-top: 3px;
+  }
+}
