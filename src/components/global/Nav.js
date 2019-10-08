@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Icon from './Icon.js';
-
+import '../../styles/components/global/Nav.scss'
 
 export class Nav extends Component {
   render() {
@@ -14,7 +14,9 @@ export class Nav extends Component {
               <img className="nav__logo" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png" alt="brand logo"/>
             </div>
             <div className="col-5 d-flex jusity-content-center align-items-center">
-              <input className="nav__search"/>
+              <form className="w-100 d-flex justify-content-center">
+                <input className="nav__search" placeholder="Search" type="text"/> 
+              </form>
             </div>
             <div className="col-3 d-flex justify-content-end align-items-center">
               <div className="ml-3">

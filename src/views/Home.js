@@ -37,7 +37,6 @@ export class Home extends Component {
         comments: [],
         time: null
       };
-      
 
       post.owner = randomKeyFromObject(this.props.users.userList);
       post.image = randomKeyFromObject(this.props.images.imageList);
@@ -122,7 +121,7 @@ export class Home extends Component {
             <div className="col-4">
               <div className="home-right-sidebar">
                 <div className="mb-1">
-                  <UserCard user={this.state.ownUser} subText={`${this.props.users.userList[this.state.ownUser].name.first} ${this.props.users.userList[this.state.ownUser].name.first}` }/>
+                  <UserCard user={this.state.ownUser} subText={`${this.props.users.userList[this.state.ownUser].name.first} ${this.props.users.userList[this.state.ownUser].name.last}` }/>
                 </div>
                 <Stories stories={this.state.stories}/>
                 <Suggestions suggestions={this.state.suggestions}/>
