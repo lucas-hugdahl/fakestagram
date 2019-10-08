@@ -3,7 +3,7 @@ export const FETCH_IMAGES_SUCCESS = 'FETCH_IMAGES_SUCCESS';
 export const FETCH_IMAGES_HAS_ERRORED = 'FETCH_IMAGES_HAS_ERRORED';
 const uniqid = require('uniqid');
 
-export function getImages(count = 70) {
+export function getImages(count = 20) {
   return dispatch => {
     let imageDictionary = {};
     fetch(`${CONSTANTS.API_ENDPOINT}/random/images?count=${count}`)

@@ -37,6 +37,7 @@ export class Home extends Component {
         comments: [],
         time: null
       };
+      
 
       post.owner = randomKeyFromObject(this.props.users.userList);
       post.image = randomKeyFromObject(this.props.images.imageList);

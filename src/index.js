@@ -24,7 +24,7 @@ const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
 
 let count = 15;
 //Grab all of the data from multiple random data APIs
-store.dispatch(getImages(count));
+store.dispatch(getImages(count * 3));
 store.dispatch(getQuotes(count));
 store.dispatch(getUsers(count));
 
