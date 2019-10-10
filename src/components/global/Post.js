@@ -15,10 +15,6 @@ export class Post extends Component {
     }
   }
 
-  componentDidMount() {
-    console.log(this.props.post)
-  }
-
   render() {
 
 
