@@ -15,7 +15,13 @@ export class Post extends Component {
     }
   }
 
+  componentDidMount() {
+    console.log(this.props.post)
+  }
+
   render() {
+
+
     return (
       <div>
           <div className="post card w-100 flex-column">
@@ -59,16 +65,16 @@ export class Post extends Component {
             <div className="post-caption px-1">
               <div className="d-flex">
                 <a href="https://lucashugdahl.com" className="link t-bold">{this.props.users.userList[this.props.post.owner].username}</a>
-                <p className="my-0 post-caption__text">{this.props.quotes.quoteList[this.props.post.caption].quote} <a href="https://lucashugdahl.com" className="link t-gray" hre="https://lucashugdahl.com">more</a></p>
+                <p className="my-0 post-caption__text">{this.props.quotes.quoteList[this.props.post.caption]} <a href="https://lucashugdahl.com" className="link t-gray" hre="https://lucashugdahl.com">more</a></p>
               </div>
             </div>
             <div className="post-comments px-1">
               <a href="https://lucashugdahl.com" className="link t-gray post-comments__view-all" hre="https://lucashugdahl.com">View all 12 comments</a>
               {
-              Array(2).map((index) => (
+              ['',''].map((post,index) => (
                   <p key={index} className="my-0">
-                    <a href="https://lucashugdahl.com" className="link d-inline-block t-bold post-comments__user">{this.props.users.userList[this.props.post.comments[index].user].username}</a>
-                    {this.props.quotes.quoteList[this.props.post.comments[index].comment].quote}
+                    <a href="https://lucashugdahl.com" className="link d-inline-block t-bold post-comments__user">{this.props.users.userList[this.props.post.comments[index].user].login.username}</a>
+                    {this.props.quotes.quoteList[this.props.post.comments[index].comment]}
                   </p>
                 ))
               }
